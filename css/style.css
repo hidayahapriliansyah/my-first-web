@@ -1,0 +1,241 @@
+/* install font */
+
+@font-face {
+
+    font-family: 'playfairBlack';
+    src: url(../font/PlayfairDisplay-Black.woff);
+
+}
+
+@font-face {
+    font-family: 'playfairReg';
+    src: url(../font/PlayfairDisplay-Regular.woff);
+}
+
+@font-face {
+    font-family: 'playfairSemi';
+    src: url(../font/PlayfairDisplay-SemiBold.woff);
+}
+
+@font-face {
+    font-family: 'playfairMed';
+    src: url(../font/PlayfairDisplay-Medium.woff);
+}
+
+/* instal font selesai*/
+
+body {
+    font: 18px/20px 'playfairMed','Times New Roman', Times, serif;
+    background-color: azure;
+}
+
+.menu li {
+    display: inline-block;
+    font-family: 'playfairBlack';
+    padding-right: 20px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+}
+
+.menu li a:hover {
+    color:rgb(138, 122, 122);
+    text-shadow: 0 0 5px white;
+}
+
+
+.header .menu {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.616), rgba(10, 116, 116, 0));
+    text-align: right;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.welcome {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes animasiBackground {
+    0% {
+        background-image: url(../img/full/img10-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: grayscale() blur(2px);
+    }
+    15% {
+        background-image: url(../img/full/img6-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+    35% {
+        background-image: url(../img/full/img9-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+    50% {
+        background-image: url(../img/full/imgentah-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+    65% {
+        background-image: url(../img/full/imgentah2-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+    85% {
+        background-image: url(../img/full/imgentah3-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+    100% {
+        background-image: url(../img/full/imgentah4-800x600.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        filter: grayscale() blur(2px);
+    }
+
+}
+
+.welcome .backgroundwelcome {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/full/img10-800x600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale() blur(2px);
+    animation: animasiBackground 35s ease infinite;
+    animation-direction: alternate;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.welcome h1 {
+    display: block;
+    font-family: 'playfairBlack';
+    font-size: 60px;
+    line-height: 100%;
+    margin-top: 270px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 5px 20px black;
+}
+
+.welcome span {
+    display: block;
+    text-align: center;
+    font-family: 'playfairSemi';
+    color: white;
+    text-shadow: 0 10px 10px black;
+}
+
+.container .opening {
+    width: 100%;
+    padding: 70px 50px 50px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.opening h2, .tentang h2 {
+    margin:auto;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.opening span {
+    display: inline-block;
+    width: 45%;
+    text-align: justify;
+    margin: 10px;
+    float: left;
+}
+
+.tentang span  {
+    width: 45%;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+.container .tentang {
+    width: 80%;
+    padding: 70px 50px 50px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto;
+    text-align: justify;
+}
+
+.tentang img {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* Galeri */
+body .gallery {
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    padding-top: 500px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.gallery .thumb {
+    width: 700px;
+    height: 60px;
+    border: black solid 2px;
+    margin: auto;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding-top: 2.5px;
+}
+
+.thumb .thumb1 {
+    background-image: url(/img/thumb/thumb10-img10-120x120.jpg);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 5px;
+}
+
+.thumb1 .img1 {
+    width: 600px;
+    height: 450px;
+    background-image: url(/img/full/img9-800x600.jpg);
+    border-radius: 10px;
+    position: static;
+    top: 0;
+    z-index: 10;
+}
+
+.thumb1:
